@@ -4,6 +4,10 @@
 ![Test Framework](https://img.shields.io/badge/test--framework-pytest-green?style=flat-square&logo=pytest&logoColor=white)
 ![Automation](https://img.shields.io/badge/automation-requests-orange?style=flat-square&logo=gpropel&logoColor=white)
 
+📖 *Read this documentation in other languages:* [Español (Spanish)](README.es.md)
+
+---
+
 This repository contains a robust, automated testing suite designed to validate the REST API backend functionality for the **Urban Grocers** platform. The framework focuses on verifying business rules, boundary values, data integrity, and backend error-handling logic during user creation workflows.
 
 ## 🧪 Automated Workflows Covered
@@ -40,29 +44,30 @@ graph TD
  ┣ 📜 sender_stand_request_post.py  # HTTP POST request wrappers.
  ┣ 📜 create_user_test.py       # Main test suite containing positive and negative test cases.
  ┣ 📜 .gitignore                # Target exclusions for virtual environments and IDE caches.
- ┗ 📜 README.md                 # Project documentation.
+ ┣ 📜 README.es.md              # Project documentation in Spanish.
+ ┗ 📜 README.md                 # Project documentation in English.
 ```
-## 🚀 Getting Started & Execution Instructions
-### 1. Clone the Repository
+## 🚀 Configuración Inicial e Instrucciones de Ejecución
+### 1. Clonar el Repositorio
 ```bash 
 git clone [https://github.com/hernanvargas-byte/api_stand_tests.git](https://github.com/hernanvargas-byte/api_stand_tests.git)
 cd api_stand_tests
 ```
-### 2. Configure the Virtual Environment
+### 2. Configurar el Entorno Virtual
 ```bash
 python -m venv .venv
-# On Windows (Git Bash / Command Prompt):
+# En Windows (Git Bash / Símbolo del sistema):
 source .venv/Scripts/activate
-# On macOS/Linux:
+# En macOS/Linux:
 source .venv/bin/activate
 ```
-### 3. Install Dependencies
+### 3. Instalar Dependencias
 ```bash
 pip install requests pytest
 ```
 
-### 4. Run the Test Suite
-To execute all functional API tests with detailed verbose output, run:
+### 4. Ejecutar la Suite de Pruebas
+Para ejecutar todas las pruebas funcionales de la API con un desglose detallado en la consola, ejecuta:
 ```bash
 pytest create_user_test.py -v
 ```
