@@ -71,3 +71,4 @@ Para ejecutar todas las pruebas funcionales de la API con un desglose detallado 
 ```bash
 pytest create_user_test.py -v
 ```
+
