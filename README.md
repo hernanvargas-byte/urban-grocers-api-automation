@@ -47,27 +47,27 @@ graph TD
  ┣ 📜 README.es.md              # Project documentation in Spanish.
  ┗ 📜 README.md                 # Project documentation in English.
 ```
-## 🚀 Configuración Inicial e Instrucciones de Ejecución
-### 1. Clonar el Repositorio
+## 🚀 Getting Started & Execution Instructions
+### 1. Clone the Repository
 ```bash 
 git clone [https://github.com/hernanvargas-byte/api_stand_tests.git](https://github.com/hernanvargas-byte/api_stand_tests.git)
 cd api_stand_tests
 ```
-### 2. Configurar el Entorno Virtual
+### 2. Configure the Virtual Environment
 ```bash
 python -m venv .venv
-# En Windows (Git Bash / Símbolo del sistema):
+# On Windows (Git Bash / Command Prompt):
 source .venv/Scripts/activate
-# En macOS/Linux:
+# On macOS/Linux:
 source .venv/bin/activate
 ```
-### 3. Instalar Dependencias
+### 3. Install Dependencies
 ```bash
 pip install requests pytest
 ```
 
-### 4. Ejecutar la Suite de Pruebas
-Para ejecutar todas las pruebas funcionales de la API con un desglose detallado en la consola, ejecuta:
+### 4. Run the Test Suite
+To execute all functional API tests with detailed verbose output, run:
 ```bash
 pytest create_user_test.py -v
 ```
